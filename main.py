@@ -42,7 +42,7 @@ main_menu_music = pygame.mixer.Sound("main_menu_music.wav")
 kuromi_image = cv2.imread("sanrio1.png", -1)
 kuromi_image = cv2.resize(kuromi_image, (40, 40))  # Resize the Kuromi image
 
-# Replace the draw_bird function with draw_kuromi
+# Function to draw the kuromi image on frame
 def draw_kuromi(frame):
     # Calculate the coordinates to place the Kuromi image centered around kuromi_x and kuromi_y
     kuromi_x_position = kuromi_x - kuromi_image.shape[1] // 2
