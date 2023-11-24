@@ -122,6 +122,7 @@ main_menu()
 def pause():
     while True:
         ret, frame = cap.read()
+        frame = cv2.flip(frame, 1)
         if not ret:
             break
         cv2.putText(frame, "PAUSED", (width // 2 - 100, height // 2), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
